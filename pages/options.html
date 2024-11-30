@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Anti-Porn Malware Redirector PRO Options</title>
+	<style>
+		body: { padding: 10px; }
+	</style>
+</head>
+
+<body>
+	<p><strong>Saftey Redirector Preferences:</strong><br>
+	<br>
+	
+ Protection Counter:
+    <select id="uTracking">
+      <option value="0">No Counter</option>
+      <option value="1">Enable Counter</option>
+      <option value="2">Enable Counter and Share</option>
+    </select>
+	</p>
+	<table width="100%" border="1">
+	  <tr>
+	    <td>Now you're able to track how many times Safety Redirector saves you! Anytime it redirects, kills a connection or corrects a typo it will add it to this counter. You have the option of having the counter showing up upon browser load or when clicking the eye.<br>
+          <br>
+        <strong>ALSO you have the option of sharing your statistics with us. The ONLY information we receive is the number of redirect (Malware/Typos) that Safety Redirector has made. No personal information is included. This information helps us a TON! Please consider enabling this feature. </strong></td>
+      </tr>
+</table>
+	<p><br/>
+	  <label>
+	    <input type="checkbox" id="showOn"> Show tracking stats on browser load.
+      </label>
+	  <br/><br/>
+	  <span style="font-size:x-small"><b>Note:</b> We do not collect personal or other information, except the number of redirects the extension did for you, against malware and typos.</span>
+	  <br/><br/>
+	  
+</p>
+	<button id="save">Save</button>
+	<div id="status" style="float:right"></div>
+
+	<script src="/js/options.js"></script>
+</body>
+</html>

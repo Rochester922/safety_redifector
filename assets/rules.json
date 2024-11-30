@@ -1,0 +1,4 @@
+[
+    {"pattern": "123.com", "redirect": "https://yahoo.com", "frequency": "once"},
+    {"pattern": "test.com", "redirect": "https://safe-test.com", "frequency": "per24"}
+]

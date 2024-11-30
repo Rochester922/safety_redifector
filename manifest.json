@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Safety Redirector",
+  "description": "Ensure your online safety by automatically blocking known malware websites. Updated daily with new definitions!",
+  "author": "Safety Redirector, LLC.",
+  "homepage_url": "http://safetyredirector.com/",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "7.1.2",
+  "permissions": [
+    "webNavigation",
+    "storage",
+    "notifications",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"  ],
+  "background": {
+    "service_worker": "js/main.js"
+  },
+  "action": {
+    "default_icon": "icons/refresh.png",
+    "default_title": "Update rules"
+  },
+  "icons": {
+    "16": "icons/button.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["/icons/icon128.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "options_ui": {
+    "page": "pages/options.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
